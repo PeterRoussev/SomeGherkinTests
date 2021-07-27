@@ -11,12 +11,10 @@ public class Browser {
     public static WebDriver driver;
 
     public static void setup(){
-//        WebDriverManager.chromedriver().setup();
-
-        System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\drivers\\chromedriver.exe");
+       WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-      driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 
     }
 
