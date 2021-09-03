@@ -16,8 +16,8 @@ public class LoginPage {
     }
 
     public static void inputCredentials(){
-        Browser.driver.findElement(emailInputField).sendKeys("roussev08@yahoo.com");
-        Browser.driver.findElement(passwordInputField).sendKeys("Parola123!");
+        Browser.driver.findElement(emailInputField).sendKeys("");
+        Browser.driver.findElement(passwordInputField).sendKeys("");
     }
 
     public static void submitLogin(){
